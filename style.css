@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #35374B;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.intro, .content, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, footer p{
+    text-align: center;
+}
+
+.intro p{
+    font-size: 25px;
+    text-align: center;
+}
+
+p{
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.parallax{
+    background: url('https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/415491060_748884323804430_2244811527401129667_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=dd477f&_nc_eui2=AeFaR-fT8IEdYmson6pPB7SLRK5bQaU3XkVErltBpTdeRd5cdFWxVpxWj_Pm7PkQmd74lyNyuJCj329FqwbRvORC&_nc_ohc=NyzgUT7yoQwAX_nnJIp&_nc_zt=23&_nc_ht=scontent.fmnl8-2.fna&oh=00_AfDgOhAXr45yhTZeL4jnz40xpNT85vaRpaEeW8xRr2kYyw&oe=65E3A01C');
+}
+
+.parallax2{
+    background: url('https://i.pinimg.com/564x/50/1d/f4/501df4a7d6bdea24b6f35bb42777a315.jpg');
+}
+
+.parallax3{
+    background: url('https://i.pinimg.com/564x/e6/c6/af/e6c6af0054e2575a79007fae00d3fb57.jpg');
+}
+
+.parallax4{
+    background: url('https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/427914569_970229884668629_4429212159728902564_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd477f&_nc_eui2=AeHM2kH05bYHHDQdzj0kNKEsGx_6ZawnAfEbH_plrCcB8ex23GxBpnjshLbpESnNDxf_fQKHotf4h9rIXdQ0-b92&_nc_ohc=YzvOSlDIWhwAX8EDcSw&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&oh=00_AfDHPM65fY3iqZB6aM9lFFIbRPlPTQzlGkRDg1PEFhuFFg&oe=65E3D4F3');
+}
+
+.parallax, .parallax2, .parallax3, .parallax4{
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.admins{
+    display: flex;
+}
+
+.admin{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+@media (max-width: 480px){
+    h1{
+        font-size: 20px;
+    }
+
+    p{
+        text-align: start;
+    }
+
+    .admins{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
